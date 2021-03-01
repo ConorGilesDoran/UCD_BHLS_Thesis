@@ -4,10 +4,11 @@ Repository for all R scripts and results involved in my final year research proj
 Project title - "Bioinformatic Analysis of Copy Number Alteration Signature Mechanisms in Ovarian Carcinoma".  
 
 There were four method components involved in this project:
-1. Confirming copy number alteration (CNA) signature findings from a previously published high grade serous ovarian cancer (HGSOC) study (Macintyre et al 2018 - "Copy number signatures and mutational processes in ovarian carcinoma").
+1. Confirming copy number alteration (CNA) signature findings from a previously published high grade serous ovarian cancer (HGSOC) study 
+   (Macintyre et al 2018 - "Copy number signatures and mutational processes in ovarian carcinoma").
 2. Differential gene expression profiling for the CNA signatures identified in 1.
 3. RNA signature identification using the results of 2.
-4. Survival analysis of CNA and RNA signature classifications .
+4. Survival analysis of CNA and RNA signature classifications.
 
 Scripts for part 1: "Signatures" folder
 
