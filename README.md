@@ -20,4 +20,4 @@ Scripts for parts 2, 3 and 4: "Post_signature_analysis" folder
 DE_RNA_survival - differential gene expression profiling, RNA signature identification and survival analysis.
 Post_sig_functions - all extra functions required for the DE_RNA_survival script.
 
-All results generated are located in the "Final_output" folder.
+All results are located in the "Final_output" zip file.
