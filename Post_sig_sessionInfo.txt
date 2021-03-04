@@ -1,0 +1,55 @@
+R version 4.0.2 (2020-06-22)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 18363)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_Ireland.1252  LC_CTYPE=English_Ireland.1252    LC_MONETARY=English_Ireland.1252
+[4] LC_NUMERIC=C                     LC_TIME=English_Ireland.1252    
+
+attached base packages:
+ [1] grid      parallel  stats4    stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+ [1] PCAtools_2.0.0              cowplot_1.1.0               lattice_0.20-41            
+ [4] reshape2_1.4.4              ggrepel_0.8.2               reshape_0.8.8              
+ [7] survminer_0.4.8             ggpubr_0.4.0                survival_3.2-7             
+[10] BBmisc_1.11                 GSVA_1.36.3                 nortest_1.0-4              
+[13] magrittr_2.0.1              msigdbr_7.2.1               fgsea_1.14.0               
+[16] sleuth_0.30.0               RNAseqR_0.0.1               tidyr_1.1.2                
+[19] RColorBrewer_1.1-2          VennDiagram_1.6.20          futile.logger_1.4.3        
+[22] ggplot2_3.3.2               stringr_1.4.0               DESeq2_1.28.1              
+[25] SummarizedExperiment_1.18.2 DelayedArray_0.14.1         matrixStats_0.56.0         
+[28] Biobase_2.48.0              GenomicRanges_1.40.0        GenomeInfoDb_1.24.2        
+[31] IRanges_2.22.2              S4Vectors_0.26.1            BiocGenerics_0.34.0        
+[34] edgeR_3.30.3                limma_3.44.3                data.table_1.13.0          
+[37] dplyr_1.0.2                
+
+loaded via a namespace (and not attached):
+  [1] readxl_1.3.1              snow_0.4-3                backports_1.1.9           fastmatch_1.1-0          
+  [5] plyr_1.8.6                lazyeval_0.2.2            GSEABase_1.50.1           splines_4.0.2            
+  [9] BiocParallel_1.22.0       digest_0.6.25             htmltools_0.5.0           fansi_0.4.1              
+ [13] checkmate_2.0.0           memoise_1.1.0             openxlsx_4.2.3            readr_1.4.0              
+ [17] annotate_1.66.0           colorspace_1.4-1          blob_1.2.1                haven_2.3.1              
+ [21] xfun_0.16                 crayon_1.3.4              RCurl_1.98-1.2            graph_1.66.0             
+ [25] genefilter_1.70.0         zoo_1.8-8                 glue_1.4.1                gtable_0.3.0             
+ [29] zlibbioc_1.34.0           XVector_0.28.0            car_3.0-10                BiocSingular_1.4.0       
+ [33] Rhdf5lib_1.10.1           abind_1.4-5               scales_1.1.1              futile.options_1.0.1     
+ [37] DBI_1.1.0                 rstatix_0.6.0             Rcpp_1.0.5                xtable_1.8-4             
+ [41] dqrng_0.2.1               foreign_0.8-80            bit_4.0.4                 rsvd_1.0.3               
+ [45] km.ci_0.5-2               ellipsis_0.3.1            pkgconfig_2.0.3           XML_3.99-0.5             
+ [49] farver_2.0.3              locfit_1.5-9.4            utf8_1.1.4                tidyselect_1.1.0         
+ [53] labeling_0.3              rlang_0.4.8               later_1.1.0.1             AnnotationDbi_1.50.3     
+ [57] munsell_0.5.0             cellranger_1.1.0          tools_4.0.2               cli_2.0.2                
+ [61] generics_0.0.2            RSQLite_2.2.0             broom_0.7.0               fastmap_1.0.1            
+ [65] knitr_1.29                bit64_4.0.5               zip_2.1.1                 survMisc_0.5.5           
+ [69] purrr_0.3.4               mime_0.9                  formatR_1.7               compiler_4.0.2           
+ [73] shinythemes_1.1.2         rstudioapi_0.11           curl_4.3                  ggsignif_0.6.0           
+ [77] tibble_3.0.3              geneplotter_1.66.0        stringi_1.4.6             forcats_0.5.0            
+ [81] Matrix_1.2-18             KMsurv_0.1-5              vctrs_0.3.2               pillar_1.4.6             
+ [85] lifecycle_0.2.0           bitops_1.0-6              irlba_2.3.3               httpuv_1.5.4             
+ [89] R6_2.4.1                  promises_1.1.1            gridExtra_2.3             rio_0.5.16               
+ [93] lambda.r_1.2.4            assertthat_0.2.1          rhdf5_2.32.4              withr_2.2.0              
+ [97] GenomeInfoDbData_1.2.3    hms_0.5.3                 DelayedMatrixStats_1.10.1 carData_3.0-4            
+[101] shiny_1.5.0               tinytex_0.25             
