@@ -298,6 +298,6 @@ survival_res <- run_survival(new_clinical, surv_object, cb_friendly = TRUE)
 saveRDS(survival_res, file = paste0(OUTDIR, "/survival/surv_results.rds"))
 
 #### session info ####
-writeLines(capture.output(sessionInfo()), paste0(OUTDIR, "/sessionInfo.txt"))
+writeLines(capture.output(sessionInfo()), paste0(OUTDIR, "/Post_sig_sessionInfo.txt"))
 
 
