@@ -24,4 +24,4 @@ All main output results are located in the "Results" folder.
 
 sessionInfo for parts 1 and 2-4 can also be viewed.
 
-Due to file size  limitations (25MB), full DE results could not be uploaded to GitHub but can shared upon request.
+Due to file size  limitations (25MB), full DE results could not be uploaded to GitHub but can be shared upon request.
