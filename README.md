@@ -22,5 +22,5 @@ Post_sig_functions - all extra functions required for the DE_RNA_survival script
 
 All main output results are located in the "Results" folder.
 
-sessionInfo for parts 1 and 2 can also be viewed.
+sessionInfo for parts 1 and 2-4 can also be viewed.
 
