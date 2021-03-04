@@ -179,4 +179,4 @@ sig_tally_415 <- DE_sig_data$clinical_sigs %>%
 saveRDS(sig_tally_415, file = paste0(OUTDIR, "/sig_tally_415.rds"))
 
 #### session info ####
-writeLines(capture.output(sessionInfo()), paste0(OUTDIR, "/sessionInfo.txt"))
+writeLines(capture.output(sessionInfo()), paste0(OUTDIR, "/Signature_sessionInfo.txt"))
