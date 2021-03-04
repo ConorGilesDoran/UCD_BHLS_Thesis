@@ -279,12 +279,12 @@ saveRDS(new_clinical, file = paste0(OUTDIR, "/ssgsea/new_clinical.rds"))
 print("Performing PCA...")
 
 PCA_list <- run_PCA(new_clinical, hall_sig_NES = RNA_sigs)
-saveRDS(PCA_list, file = paste0(OUTDIR, "/PCA/PCA_list.rds"))
+saveRDS(RNA_PCA_list, file = paste0(OUTDIR, "/PCA/RNA_PCA_list.rds"))
 
 pdf(paste0(OUTDIR, "/PCA/RNA_sig_pca.pdf"), height = 10, width = 12)
-PCA_list$sig_PCA
-PCA_list$sig_clinical_PCA
-PCA_list$scree_clinical
+RNA_PCA_list$sig_PCA
+RNA_PCA_list$sig_clinical_PCA
+RNA_PCA_list$scree_clinical
 dev.off()
 
 ## SURVIVAL ##
