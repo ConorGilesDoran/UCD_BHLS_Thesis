@@ -12,7 +12,7 @@ There were four method components involved in this project:
 
 Scripts for part 1: "Signatures" folder
 
-signature_extrapolation - for CNA signature extrapolation for TCGA HGSOC data, as performed by Macintyre et al 2018.
+signature_extrapolation - CNA signature extrapolation for TCGA HGSOC data, as performed by Macintyre et al 2018.
 All_Sig_Functions - all functions required for signature extrapolation and formatting of CNA signature results for downstream analysis.
 
 Scripts for parts 2, 3 and 4: "Post_signature_analysis" folder
