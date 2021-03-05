@@ -743,11 +743,6 @@ generateSampleByComponentMatrix <- function(CN_features, comp_params_rds = NULL,
 
 chooseNumberSignatures <- function(sample_by_component, outfile = NULL, min_sig=3, max_sig=12, iter=100, cores=1)
 {
-
-  if(is.null(outfile)){
-    outfile <- "sigNums.pdf"
-  }
-
   nmfalg <- "brunet"  # specific algorithm
   seed <- 77777       # seed specified
 
@@ -767,12 +762,7 @@ chooseNumberSignatures <- function(sample_by_component, outfile = NULL, min_sig=
                what = c("cophenetic", "dispersion","sparseness", "silhouette"),
                xname="Observed",yname="Randomised",main="")
 
-  pdf(file=outfile, width=10, height=10 )  # save to pdf
-  p
-  dev.off()
-
   return(p)
-
 }
 
 
