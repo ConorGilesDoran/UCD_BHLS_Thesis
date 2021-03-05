@@ -119,7 +119,7 @@ pdf(paste0(OUTDIR, "/311Norm_sig_x_sample.pdf"))
 heatmap(as.matrix(all_DE_data$matching_sig_data[,-8]))
 dev.off()
 
-# write the joined clinical/signature data to file as 'metadata_csv' for RNAseR functions 
+# write the joined clinical/signature data to file as 'metadata_csv' for RNAseqR functions 
 # RNAseR functions will take the file path as input to locate the metadata
 
 write.csv(all_DE_data$sig_clinical_join, file = metadata.csv, row.names = FALSE)
@@ -293,7 +293,7 @@ print("Running Survival Analysis...")
 
 surv_object <- Surv(time = new_clinical$OS.time, event = new_clinical$OS)
 
-survival_res <- run_survival(new_clinical, surv_object, cb_friendly = TRUE) 
+survival_res <- run_survival(new_clinical, surv_object, cb_friendly = FALSE) 
 
 saveRDS(survival_res, file = paste0(OUTDIR, "/survival/surv_results.rds"))
 
