@@ -96,11 +96,6 @@ if(!exists("sample_by_comp.rds")){
   sample_by_comp <- readRDS("sample_by_comp.rds")
 }
 
-# sample_by_comp <- generateSampleByComponentMatrix(CN_feats, all_components = feat_components)
-
-# saveRDS(sample_by_comp,
-#        file = paste0(OUTDIR, "/sample_by_components.rds"))
-
 # generate and save matrix
 pdf(paste0(OUTDIR, "/TCGA_OV.sample_by_components.pdf"), onefile = FALSE)
 NMF::aheatmap(sample_by_comp,
@@ -119,7 +114,7 @@ dev.off()
 print("Generating Signatures...")
 
 # identify optimal number of signatures to be used
-num_sigs <- chooseNumberSignatures(sample_by_comp, outfile = paste0(OUTDIR, "/TCGA_OV.num_sigs.pdf")) # PDF NOT VIEWABLE
+num_sigs <- chooseNumberSignatures(sample_by_comp, outfile = paste0(OUTDIR, "/TCGA_OV.num_sigs.pdf")) ####
 
 # number of signatures to be used
 NUMSIGS <- 7
@@ -137,7 +132,7 @@ dev.off()
 comp_by_sig <- TCGA_signatures@fit@W
 
 saveRDS(TCGA_signatures, file = paste0(OUTDIR, "/TCGA_signature_results.rds"))
-TCGA_signatures <- readRDS(paste0(OUTDIR, "/TCGA_signature_results.rds"))
+TCGA_signatures <- readRDS(paste0(OUTDIR, "/TCGA_signature_results.rds"))  ####
 #### QUANTIFY SIGNATURES ####
 
 print("Quantifying Signatures...")
@@ -147,11 +142,11 @@ print("Quantifying Signatures...")
 norm_sig_by_samp <- quantifySignatures(sample_by_comp, component_by_signature = comp_by_sig)
 
 ##FIX##
-signature_list <- list("num_sigs" = num_sigs, "signatures" = comp_by_sig, "sig_by_samp" = norm_sig_by_samp)
+signature_list <- list("num_sigs" = num_sigs, "signatures" = comp_by_sig, "sig_by_samp" = norm_sig_by_samp) ####
 
-saveRDS(signature_list, file = "sig_list.rds")
+saveRDS(signature_list, file = "sig_list.rds") ####
 
-# saveRDS(norm_sig_by_samp, file = paste0(OUTDIR, "/normalized_sig_x_samp.rds"))
+# saveRDS(norm_sig_by_samp, file = paste0(OUTDIR, "/normalized_sig_x_samp.rds")) ####
 
 #### FORMAT SIGNATURE RESULTS ####
 
