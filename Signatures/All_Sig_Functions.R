@@ -741,7 +741,7 @@ generateSampleByComponentMatrix <- function(CN_features, comp_params_rds = NULL,
 # 1000 random shuffles of the input matrix performed to get a null estimate of each of the scores
 # (Macintyre et al. 2018)
 
-chooseNumberSignatures <- function(sample_by_component, outfile = NULL, min_sig=3, max_sig=12, iter=100, cores=1)
+chooseNumberSignatures <- function(sample_by_component, min_sig=3, max_sig=12, iter=100, cores=1)
 {
   nmfalg <- "brunet"  # specific algorithm
   seed <- 77777       # seed specified
