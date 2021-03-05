@@ -684,7 +684,6 @@ calculateSumOfPosteriors  <-  function(CN_feature, components, name, rowIter = 1
 # generateSampleByComponentMatrix
 # computes posterior probability of a CN feature property belonging to a component
 # posterior probability vectors summed and compiled into a sample by component matrix
-# can use the
 
 generateSampleByComponentMatrix <- function(CN_features, comp_params_rds = NULL, all_components=NULL, cores = 1, rowIter = 1000, subcores = 2)
 {
