@@ -421,8 +421,7 @@ getCN <- function(abs_profiles)
   data.frame(out,stringsAsFactors = F)
 }
 
-##below is example of how an R package function is annotated (in 'roxygen2' format):
-##also addded some print statements to see how things are going in there!
+## example of how an R package function is annotated (in 'roxygen2' format):
 
 #' extractCopyNumberfeatures - used to derive genome wide CN Feature Distributions within the data
 #' @param CN_data - QDNAseq object class or list of segment tables
